@@ -4,16 +4,16 @@ function BlogHeader() {
     return (
         <Fragment>
             <div>
-                <div class="pn-noise-image">
+                <div className="pn-noise-image">
                 </div>
-                <div class="container-fluid">
-                    <div class="pn-header mt-4 text-center">
+                <div className="container-fluid">
+                    <div className="pn-header mt-4 text-center align-middle">
                         <h1>
                             Perlin Noise
                             <br/>
                             Visualization                
                         </h1>
-                        <p class="lead pn-lead mt-3">
+                        <p className="lead pn-lead mt-3">
                             in C/C++
                         </p>
                     </div>
