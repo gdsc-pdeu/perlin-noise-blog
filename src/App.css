@@ -1,5 +1,9 @@
 .pn-noise-image {
-    background-image: url(https://i.ytimg.com/vi/66IXiG2Pj1I/maxresdefault.jpg);
+    --cover-img-url: url(https://i.ytimg.com/vi/66IXiG2Pj1I/maxresdefault.jpg);
+}
+
+.pn-noise-image {
+    background-image: var(--cover-img-url);
     background-size: cover;
     height: 20rem;
     border-bottom-left-radius: 50% 20%;
