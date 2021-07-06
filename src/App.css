@@ -1,5 +1,6 @@
 .pn-noise-image {
-    --cover-img-url: url(https://i.ytimg.com/vi/66IXiG2Pj1I/maxresdefault.jpg);
+    /* --cover-img-url: url(https://i.ytimg.com/vi/66IXiG2Pj1I/maxresdefault.jpg); */
+    --cover-img-url: url(./assets/maxresdefault.jpg);
 }
 
 /* Background image */
@@ -116,4 +117,40 @@
     list-style-type: circle;
     list-style-position: outside;
     list-style-image: none;
+}
+
+/* For backtick code, like in markdown files */
+.backtick-code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: rgba(116, 116, 116, 0.56);
+}
+
+.codefield-shell {
+    padding: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    background-color: rgba(149, 149, 149, 0.438);
+    border-radius: 0.3rem;
+}
+.codefield-shell .shell-prompt {
+    color: cyan;
+}
+.codefield-shell .shell-cmd {
+    color: cyan;
+}
+
+.codefield-cpp {
+    padding: 1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    background-color: rgba(149, 149, 149, 0.438);
+    border-radius: 0.3rem;
+}
+.codefield-cpp .cpp-inc {
+    color: cyan;
+}
+.codefield-cpp .cpp-comments {
+    color: orange;
 }

@@ -92,6 +92,86 @@ function BlogContent() {
                         setup looks and feels better xD
                     </span>
                 </p>
+
+                <h1 className="pn-topic-header mt-5 liner">
+                    Lets Visualise!
+                </h1>
+                <p className="para-content">
+                    To start, create two files named
+                    <span className="ml-2 backtick-code">
+                        PerlinNoise.h
+                    </span>
+                    &nbsp;and
+                    <span className="ml-2 backtick-code">
+                        main.cpp
+                    </span>
+                    &nbsp;in your desired directory.
+                </p>
+
+                <div className="codefield-shell">
+                    <span className="shell-prompt">$</span>
+                    &nbsp;
+                    <span className="shell-cmd">touch</span>
+                    &nbsp;PerlinNoise.h main.cpp
+                </div>
+                
+                <p className="para-content mt-3">
+                    Next, in your&nbsp;
+                    <span className="backtick-code">
+                        PerlinNoise.h
+                    </span>
+                    &nbsp;file copy and paste&nbsp;
+                    <a href="para-content https://github.com/Maharshi-Pandya/Perlin-Noise-Implementation/blob/master/cpp-test/pn_header/PerlinNoise.h">
+                        this code
+                    </a>
+                    &nbsp;from my Github repo. 
+                    This is the header file which we will use to generate noise values for any input we provide.
+                    <br/><br/>
+                    (Don't worry if you don't understand how it generates those values. 
+                    Look under "Links and Citations" for further details on the algorithm).
+
+                    Moving on, in your&nbsp;
+                    <span className="backtick-code">
+                        main.cpp
+                    </span> 
+                    &nbsp;file, add the following lines
+                </p>
+
+                <div className="codefield-cpp">
+                    <span className="cpp-comments">
+                        // for TIOCGWINSZ
+                    </span>
+                    <br/>
+                    <span className="cpp-inc">
+                        #include
+                    </span>
+                    &nbsp;&lt;sys/ioctl.h&gt;&nbsp;
+
+                    <br/>
+
+                    <span className="cpp-comments">
+                        // for STDOUT_FILENO
+                    </span>
+                    <br/>
+                    <span className="cpp-inc">
+                        #include
+                    </span>
+                    &nbsp;&lt;sys/unistd.h&gt;&nbsp;
+                </div>
+
+                <p className="para-content mt-3">
+                    The files&nbsp;
+                    <span className="backtick-code">
+                        sys/ioctl.h
+                    </span>
+                    &nbsp;and&nbsp;
+                    <span className="backtick-code">
+                        unistd.h
+                    </span>
+                    &nbsp;are included so that 
+                    further in our program we can determine the size of the terminal we are 
+                    using so we are not limited to just hard-code the values ourselves.
+                </p>
             </div>
         </Fragment>
     );
