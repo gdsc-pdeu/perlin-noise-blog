@@ -4,7 +4,7 @@ function BlogHeader() {
     return (
         <Fragment>
             <div>
-                <div className="pn-noise-image">
+                <div className="container-fluid pn-noise-image">
                 </div>
                 <div className="container-fluid">
                     <div className="pn-header mt-4 text-center align-middle">
