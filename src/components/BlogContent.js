@@ -4,6 +4,7 @@ import WWWA from "./WWWA";
 import BlogSetup from "./BlogSetup";
 import LetsVisualize from "./LetsVisualize";
 import SetConsoleSize from "./SetConsoleSize";
+import DrawPerlinConsole from "./DrawPerlinConsole";
 
 function BlogContent() {
     return (
@@ -14,6 +15,7 @@ function BlogContent() {
                 <BlogSetup />
                 <LetsVisualize />
                 <SetConsoleSize />
+                <DrawPerlinConsole />
             </div>
         </Fragment>
     );

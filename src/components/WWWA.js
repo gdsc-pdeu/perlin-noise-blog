@@ -10,7 +10,7 @@ function WWWA() {
                 <p className="para-content mt-3">
                     Here's the visualization of what we will achieve.
                 </p>
-                <p class="bq mt-3 ml-3 mr-5">
+                <p className="bq mt-3 ml-3 mr-5">
                     Note: This program will work only in *nix shells. 
                 </p>
                 <div className="mt-3 text-center">

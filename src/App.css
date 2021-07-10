@@ -203,3 +203,7 @@ body::-webkit-scrollbar-thumb:hover{
     border-radius: 10rem;
     color: rgb(146, 204, 204);
 }
+
+.plot-headers {
+    color: #E6F5FF;
+}

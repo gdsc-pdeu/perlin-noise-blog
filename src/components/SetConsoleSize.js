@@ -46,7 +46,7 @@ function SetConsoleSize() {
                     </span>
                     (STDOUT_FILENO, TIOCGWINSZ, &window);
                     
-                    <br/>
+                    <br/><br/>
                     <span className="cpp-comments">
                         // set the world width and height (-2 for safety reasons)
                     </span>
