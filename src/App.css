@@ -1,3 +1,17 @@
+/* scrollbar */
+body::-webkit-scrollbar {
+    width: 0.4em;
+}   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+} 
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(255, 227, 103);
+}
+
 .pn-noise-image {
     /* --cover-img-url: url(https://i.ytimg.com/vi/66IXiG2Pj1I/maxresdefault.jpg); */
     --cover-img-url: url(./assets/maxresdefault.jpg);
@@ -156,6 +170,15 @@
 }
 .codefield-cpp .cpp-dt {
     color: #E43F5A;
+}
+.codefield-cpp .cpp-uddt {
+    color: lightgreen;
+}
+.codefield-cpp .cpp-func {
+    color: lightgreen;
+}
+.codefield-cpp .cpp-consts {
+    color: greenyellow;
 }
 
 .codefield-container .lan-id {
