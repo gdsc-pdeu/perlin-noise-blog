@@ -336,6 +336,112 @@ function DrawPerlinConsole() {
                 </span>
                 &nbsp;on their keyboard, we listen to this signal and 
                 instead of exiting the program abruptly, we move down below the grid and then exit with a message.
+                <br/><br/>
+                Add in your&nbsp;
+                <span className="backtick-code">
+                    main.cpp
+                </span>
+                &nbsp;file
+            </p>
+
+            <div className="codefield-container">
+                <div className="codefield-cpp">
+                    <span className="cpp-comments">
+                        // when Ctrl-C is pressed
+                    </span>
+                    <br/>
+                    <span className="cpp-dt">
+                        void
+                    </span>
+                    &nbsp;ctrlCSignalHandler(
+                    <span className="cpp-dt">
+                        int
+                    </span>
+                    &nbsp;signum)
+                    <br/>
+                    &#123;
+                    <br/>
+                    <span className="cpp-comments">
+                        // go down w_height lines
+                    </span>
+                    <br/>
+                    <span className="cpp-func">
+                        printf
+                    </span>
+                    (
+                        <span className="cpp-dt">
+                            "\033[%dB"
+                        </span>
+                        , w_height);
+                    <br/>
+                    <span className="cpp-func">
+                        printf
+                    </span>
+                    ("\nAight! Imma head out...\n\n");
+                    <br/><br/>
+                    <span className="cpp-func">
+                        exit
+                    </span>
+                    (signum);
+                    <br/>
+                    &#125;
+                </div>
+                <div className="text-center mt-2 lan-id">
+                    Language: Cpp
+                </div>
+            </div>
+
+            <p className="para-content mt-5">
+                This will be our callback (handler) function when&nbsp;
+                <span className="backtick-code">
+                    Ctrl-C
+                </span>
+                &nbsp;is pressed. 
+                It takes in a&nbsp;
+                <span className="backtick-code">
+                    signum
+                </span>
+                &nbsp;integer as an argument which is the number associated with 
+                the&nbsp;
+                <span className="backtick-code">
+                    Ctrl-C
+                </span>
+                &nbsp;signal.
+
+                <br/><br/>
+
+                Now in the body of the function, we move down below the grid using 
+                ANSI escape sequence&nbsp;
+                <span className="backtick-code">
+                    \033[kB
+                </span>
+                &nbsp;which moves the cursor down by&nbsp;
+                <span className="backtick-code">
+                    k
+                </span>
+                &nbsp;units. 
+                And then, we print our exit message (which can be anything you like) and 
+                lastly we exit the program using&nbsp;
+                <span className="backtick-code">
+                    exit
+                </span>
+                &nbsp;function with the associated&nbsp;
+                <span className="backtick-code">
+                    signum
+                </span>
+                .
+
+                <br/><br/>
+
+                Next section, we will combine everything using a&nbsp;
+                <span className="backtick-code">
+                    main()
+                </span>
+                &nbsp;function in our&nbsp;
+                <span className="backtick-code">
+                    main.cpp
+                </span>
+                &nbsp;file.
             </p>
         </Fragment>
     );

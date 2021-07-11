@@ -5,6 +5,7 @@ import BlogSetup from "./BlogSetup";
 import LetsVisualize from "./LetsVisualize";
 import SetConsoleSize from "./SetConsoleSize";
 import DrawPerlinConsole from "./DrawPerlinConsole";
+import BlogMain from "./BlogMain";
 
 function BlogContent() {
     return (
@@ -16,6 +17,7 @@ function BlogContent() {
                 <LetsVisualize />
                 <SetConsoleSize />
                 <DrawPerlinConsole />
+                <BlogMain />
             </div>
         </Fragment>
     );
