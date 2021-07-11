@@ -207,3 +207,30 @@ body::-webkit-scrollbar-thumb:hover{
 .plot-headers {
     color: #E6F5FF;
 }
+
+.link-card {
+    border-radius: 5%;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 0px 0px;
+    transition: box-shadow 0.5s;
+}
+.link-card:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 70px 70px 1px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 18rem;
+}
+
+.card-text {
+    font-family: "Benne", "sans-serif";
+}
+
+.author {
+    color: #f3ec8a;
+}
+.hr-style1 {
+    border-bottom: 2px solid grey;
+    border-radius: 50%;
+}

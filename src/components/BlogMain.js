@@ -110,6 +110,71 @@ function BlogMain() {
                     Language: Cpp
                 </div>
             </div>
+
+            <p className="para-content mt-5">
+            <i className="fa fa-caret-right" aria-hidden="true"></i>
+                <span className="ml-3">
+                    First off, before everything, we register our signal handler using the&nbsp;
+                    <span className="backtick-code">
+                        signal 
+                    </span>
+                    &nbsp;function in&nbsp;
+                    <span className="backtick-code">
+                        {"<csignal>"}
+                    </span>
+                    &nbsp;header file. It takes the&nbsp;
+                    <span className="backtick-code">
+                        Ctrl-C
+                    </span>
+                    &nbsp;signal number i.e.&nbsp;
+                    <span className="backtick-code">
+                        SIGINT
+                    </span>
+                    &nbsp;(predefined in C++) 
+                    as the first argument and our custom signal handler as the second argument.
+                </span>
+
+                <br/><br/>
+
+                <i className="fa fa-caret-right" aria-hidden="true"></i>
+                <span className="ml-3">
+                    We then set the console size and "activate" the noise space. 
+                    It is necessary to generate Perlin Noise values.
+                </span>
+
+                <br/><br/>
+
+                <i className="fa fa-caret-right" aria-hidden="true"></i>
+                <span className="ml-3">
+                    Finally, using an infinite loop, we repeatedly render our 
+                    visualisation via the&nbsp;
+                    <span className="backtick-code">
+                        DrawPerlinConsole()
+                    </span>
+                    &nbsp;method.
+                </span>
+            </p>
+
+            <p className="bq mt-4 ml-3 mr-5">
+                Note: Since infinite while loop runs as fast as it can, it will be kind of overkill for us. 
+                So I have used the&nbsp;
+                <span className="backtick-code">
+                    usleep
+                </span>
+                &nbsp;function for Linux, 
+                which sleeps for 0.001 seconds after every while loop render so as to not overkill the rendering.
+            </p>
+
+            <div className="text-center">
+                <p className="para-content mt-4">
+                    With this, we are done with our&nbsp;
+                    <span className="backtick-code">
+                        main.cpp
+                    </span>
+                    &nbsp;file!
+                    <br/>
+                </p>
+            </div>
         </Fragment>
     );
 }
